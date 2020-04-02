@@ -9,6 +9,14 @@
         href="https://fonts.googleapis.com/css?family=Raleway+Dots&display">
 
     <style>
+
+      body {
+          background-color: #001f3f;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 150px;
+      }
       .explanation {
         position: absolute;
         top: 0px;
@@ -27,24 +35,7 @@
         text-align: center;
         line-height: 5vw;
         font-family: 'Raleway Dots';
-      }
-
-      .hour {
-        background-color: #BDFF00;
-        width: 25vw;
-        height: 25vw;
-        mix-blend-mode: exclusion;
-        box-shadow: 10px 10px 100px 100px #BDFF00;
-        animation: glow 1.5s linear infinite alternate;
-      }
-
-      .minute {
-        background-color: #FF9E00;
-        width: 25vw;
-        height: 25vw;
-        mix-blend-mode: exclusion;
-        box-shadow: 10px 10px 100px 100px #FF9E00;
-        animation: glow 1.5s linear infinite alternate;
+        filter: blur(0px);
       }
 
       .second {
@@ -53,7 +44,27 @@
         height: 20vw;
         mix-blend-mode: exclusion;
         box-shadow: 10px 10px 100px 100px #FF0032;
-        animation: glow 1.5s linear infinite alternate;
+        filter: blur(5px);
+        animation-direction: alternate;
+      }
+
+      .minute {
+        background-color: #FF9E00;
+        width: 25vw;
+        height: 25vw;
+        mix-blend-mode: exclusion;
+        box-shadow: 10px 10px 100px 100px #FF9E00;
+        filter: blur(5px);
+        animation-direction: alternate;
+      }
+      .hour {
+        background-color: #BDFF00;
+        width: 25vw;
+        height: 25vw;
+        mix-blend-mode: exclusion;
+        box-shadow: 10px 10px 100px 100px #BDFF00;
+        filter: blur(5px);
+        animation-direction: alternate;
       }
 
       .animation {
@@ -63,16 +74,15 @@
 
       @keyframes move_across {
         0% {
-          left: 0vw;
+      
+          height: 200px;
+          width: 200px;
         }
         100% {
-          left: 95vw;
-        }
-      }
-
-      @keyframes glow {
-      to {
-          box-shadow: 0px 0px 30px 20px #535FED;
+        
+          height: 500px;
+          width: 500px;
+          background: #001f3f;
         }
       }
 
@@ -88,10 +98,11 @@
       </p>
     </div>
 
-    <div class="second"></div>
-    <div class="minute"></div>
-    <div class="hour"></div>
-
+   
+    
+      <div class="hour"></div>
+      <div class="minute"></div>
+      <div class="second"></div>
     
 
 
