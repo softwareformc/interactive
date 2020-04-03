@@ -1,0 +1,61 @@
+vertical-menu {
+  	width: 200px;
+	}
+
+	.vertical-menu a {
+ 	background-color: yellow;
+ 	color: black;
+  	display: block;
+  	padding: 30px;
+  	text-decoration: none;
+  	font-size: 30px;
+  	text-shadow: 0 0 10px white;
+  	border-style: double;
+    border-color: color:#191D26;
+	}
+
+	.vertical-menu a:hover {
+	  background-color: #ccc;
+	}
+
+	.vertical-menu a.active {
+ 	background-color: #191D26;
+  	color: #F53D00;
+  	font-size: 50px;
+  	text-shadow: 0 0 10px #F53D00;
+    text-align: center;
+	}
+
+body {
+   background-color: #F53D00;
+    font-family: 'Averia Serif Libre', cursive;
+  }
+
+.container {
+  background-color: red;
+  padding: 0px;
+}
+
+.container img {
+  float: left;
+  padding: 0px 50px 50px 0px;
+}
+
+
+h1 {
+  color: black;
+  text-shadow: 0 0 10px white;
+  font-size: 30px;
+  font-family: 'Averia Serif Libre', cursive;
+  margin-right: 50px;
+  margin-left: 50px;
+  color:#191D26
+  }
+
+p {
+  font-size: 30px;
+  font-family: 'Averia Serif Libre', serif;
+  margin-right: 50px;
+  margin-left: 50px;
+  color:#191D26;
+}
