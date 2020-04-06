@@ -1,61 +1,84 @@
-vertical-menu {
-  	width: 200px;
-	}
 
-	.vertical-menu a {
- 	background-color: yellow;
- 	color: black;
-  	display: block;
-  	padding: 30px;
-  	text-decoration: none;
-  	font-size: 30px;
-  	text-shadow: 0 0 10px white;
-  	border-style: double;
-    border-color: color:#191D26;
-	}
+.collapsible {
+  background-color: #777;
+  color: white;
+  text-shadow: 0 0 10px white
+  cursor: pointer;
+  padding: 18px;
+  width: 60%;
+  border: none;
+  text-align: left;
+  float: right;
+  outline: dotted;
+  font-size: 20px;
+  font-family: 'Averia Serif Libre', cursive;
+}
 
-	.vertical-menu a:hover {
-	  background-color: #ccc;
-	}
+.active, .collapsible:hover {
+  background-color: #555;
+}
 
-	.vertical-menu a.active {
- 	background-color: #191D26;
-  	color: #F53D00;
-  	font-size: 50px;
-  	text-shadow: 0 0 10px #F53D00;
-    text-align: center;
-	}
-
-body {
-   background-color: #F53D00;
-    font-family: 'Averia Serif Libre', cursive;
-  }
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  float: right;
+  border: dotted;
+  background-color: yellow;
+  opacity: 70%;
+  mix-blend-mode: exclusion;
+}
 
 .container {
-  background-color: red;
   padding: 0px;
 }
 
 .container img {
   float: left;
-  padding: 0px 50px 50px 0px;
+  margin-right:20px;
+  margin-top: 20px; 
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 18px 10px rgb(255,55,0);
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
+
+body {
+    background: rgb(255,55,0);
+    background: radial-gradient(circle, rgba(255,55,0,1) 0%, rgba(116,113,68,1) 100%);
+    font-family: 'Averia Serif Libre', cursive;
+  }
 
 
 h1 {
-  color: black;
+  color: white;
   text-shadow: 0 0 10px white;
-  font-size: 30px;
+  font-size: 18px;
   font-family: 'Averia Serif Libre', cursive;
   margin-right: 50px;
   margin-left: 50px;
   color:#191D26
   }
 
-p {
-  font-size: 30px;
-  font-family: 'Averia Serif Libre', serif;
+h2 {
+  color: white;
+  text-shadow: 0 0 10px white;
+  font-size: 100px;
+  font-family: 'Averia Serif Libre', cursive;
   margin-right: 50px;
   margin-left: 50px;
+  color:#191D26
+  border:dotted;
+  }
+
+p {
+  font-size: 14px;
+  font-family: 'Averia Serif Libre', serif;
+  margin-right: 100px;
+  margin-left: 100px;
   color:#191D26;
 }
