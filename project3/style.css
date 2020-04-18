@@ -14,7 +14,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: times, serif;
+  font-family: 'Aguafina Script', cursive;
   padding: 100px;
 }
 
@@ -35,7 +35,7 @@ img {
 }
 
 .entry {
-  width: 300px;
+  width: 400px;
   margin-top: 20px;
   margin-left: 20px;
 }
