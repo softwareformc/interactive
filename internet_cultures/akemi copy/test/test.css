@@ -1,0 +1,23 @@
+
+/*img {
+    width: 300px;
+    transition: opacity 1s;
+    opacity: 100%;
+    position: absolute;   
+    opacity: 90%;  
+    right: 10px;
+}
+
+*/
+
+img {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px #000000;
+  }
+
+.visable {
+    transition: opacity 1s;
+    position: fixed;
+    top: 165px; right: 0px; width: 400px;
+}

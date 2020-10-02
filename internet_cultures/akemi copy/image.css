@@ -1,0 +1,18 @@
+/*img {
+    border-radius: 10px;
+    width: 50%;
+    position: fixed;
+    opacity: 100%;
+    right: 10px;
+    transition: opacity 10s;
+    display: flex;
+  }
+*/
+
+  img {
+    border: 5px solid #555;
+    width: 200px;
+    transition: opacity 10s;
+    position: fixed;     
+}
+

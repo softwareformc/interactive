@@ -1,0 +1,11 @@
+
+ /* .overflow {
+    background-color: white;
+    height: 100vh;
+    overflow: auto;
+  }*/
+ 
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
