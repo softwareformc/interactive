@@ -1,20 +1,183 @@
-<head>
-  <link rel="stylesheet" href="stylesheet.css">
-  <link rel="stylesheet" href="a-tachyons.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="a-tachyons.css">
+    <link rel="stylesheet" href="basscss-grid.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
   </head>
 
-<div class="fl w-25 pt2 pa2 overflow">
+  <body>
 
-    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
-       <p style="font-size: 45px;"> index
-        <a href="internet_cultures/akemi copy/test/test.html">
-        on the internet with akemi</a>
-       </p>
-    </div> 
+<!-- INTRO PAGE
+mb = margin bottom
+tc = text align center 
+-->
+    <div class="min-vh-100 container pt4 pb5 flex flex-column justify-between mb5-ns">
+      
+        <header class="header-desktop"></header>
+      <header class="header">
+      
+        <nav class="nav">
+          <ul class="nav-list flex flex-wrap justify-center bold">
+
+            <li class="flex justify-center mb1 mb4-ns logo-container">
+              <a href="index.html">
+                  <div class="infinity"></div>
+              </a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#fall">
+                    <div class="circle1"></div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#winter">
+                    <div class="circle2"></div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#spring">
+                    <div class="circle3"></div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#summer">
+                    <div class="circle4"></div>
+                </a>
+            </li>
+            </ul>
+        </nav>
+        </header>
+
+        <div class="intro-date">
+            <div class="marquee heading tc">
+                <span>online sketchbook — four seasons of coding practice</span>
+            </div> 
+
+
+        </div>
+
+    </div>
+
+<!-- FALL SECTION -->
+
+<div class="container">
+    <div class="pt5-ns mb4 mb5-ns fade" id="fall">
+        <h1 class="heading tc" style="color:#555">fall</h1>
+    </div>
+
+    <!-- 
+    ph3-ns = media breakpoint
+    mw9 = max width to ensure that your content doesn't get too wide on large monitors
+    cf = clear floats so parent element doesnt collapse
+    ph1-ns = media breakpoint
+    pv = padding vertical
+    fl = .fl { float: left;  _display: inline; }
+    pa2 = padding
+    -->
+    <div class="mw9 center ph3-ns">
+        <div class="cf ph1-ns">
+
+          <div class="fl w-100 w-25-ns pa1">
+            <div class="pv2">
+                <img src="gif_example.gif">October 21<br>Another day</img>
+            </div>
+          </div>
+
+          <div class="fl w-100 w-25-ns pa1">
+            <div class="pv2">
+                <img src="gif_example.gif">October 21<br>Another day</img>
+            </div>
+          </div>
+
+          <div class="fl w-100 w-25-ns pa1">
+            <div class="pv2">
+                <img src="gif_example.gif">October 21<br>Another day</img>
+            </div>
+          </div>
+          <div class="fl w-100 w-25-ns pa1">
+            <div class="pv2">
+                <img src="gif_example.gif">October 21<br>Another day</img>
+            </div>  
+          </div>
+
+          <div class="fl w-100 w-25-ns pa1">
+            <div class="pv1">
+                <img src="gif_example.gif">
+            </div>
+          </div>
+          <div class="fl w-100 w-25-ns pa1">
+            <div class="pv1">
+                <img src="gif_example.gif">
+            </div>
+          </div>
+          <div class="fl w-100 w-25-ns pa1">
+            <div class="pv1">
+                <img src="gif_example.gif">
+            </div>
+          </div>
+          <div class="fl w-100 w-25-ns pa1">
+            <div class="pv1">
+                <img src="gif_example.gif">
+            </div>
+          </div>
+
+    </div>
 </div>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+<!-- WINTER SECTION -->
+
+<div class="container">
+    <div class="pt5-ns mb4 mb5-ns fade" id="winter">
+        <h1 class="heading tc" style="color:blue">winter</h1>
+    </div>
+</div>
+
+<!-- Spring SECTION -->
+
+<div class="container">
+    <div class="pt5-ns mb4 mb5-ns fade" id="spring">
+        <h1 class="heading tc" style="color:yellow">
+            spring
+        </h1>
+    </div>
+</div>
+
+<!-- Summer SECTION -->
+
+<div class="container">
+    <div class="pt5-ns mb4 mb5-ns fade" id="summer">
+        <h1 class="heading tc" style="color:purple">
+            summer
+        </h1>
+    </div>
+</div>
+
+
+<!-- footer SECTION -->
+        <footer class="footer pv3 pv5-ns">
+            <div class="container flex justify-between items-center">
+            <a href="#top" class="footer-link contain bg-center bg-no-repeat"></a>
+            <nav class="footer-nav flex items-center">
+                <a href="https://twitter.com" class="no-underline db">
+                    <img src="images/twitter.svg" class="db">
+                </a>
+                <a href="https://facebook.com" class="no-underline ml3 db">
+                    <img src="images/facebook.svg" class="db">
+                </a>
+            </nav>
+            </div>
+        </footer>
+
+    <script src="in-view.js"></script>
+    <script src="main.js"></script>
+    <script src="titlemove.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,151 @@
+/* we declare our variable inside a :root selector */
+:root {
+  /* give the variable a name and value (needs two -- in front) */
+  --orange: #ff3c15;
+}
+
+body {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #414141;
+  
+  background-color: rgb(210, 210, 210);
+  background-image: url(background.jpg);
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: #414141;
+}
+
+.heading {
+  color: #fff;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 3em;
+  line-height: 1.3;
+  text-shadow: 2px 2px 12px white;
+
+}
+
+.heading-orange {
+  font-size: 120px;
+  -webkit-text-stroke-color: var(--orange);
+  margin-bottom: 3rem;
+  color: var(--orange);
+}
+
+
+
+.container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+
+.cite {
+  display: inline-block;
+  color: var(--orange);
+  line-height: 1;
+  padding: 24px 18px;
+  border-radius: 100%;
+  border: solid 3px var(--orange);
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+
+.footer {
+  background-color: #222;
+}
+
+.footer-link {
+  width: 131px;
+  height: 40px;
+  background-image: url('logo.svg');
+}
+
+.fade {
+  opacity: .5;
+  transition: opacity 3.5s ease;
+}
+
+.visible {
+  opacity: 1;
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 16px;
+    background-size: auto 120vh;
+  }
+  .heading {
+    font-size: 72px;
+    -webkit-text-stroke-width: 2px;
+  }
+  .button {
+    padding: 18px 32px;
+    font-size: 16px;
+  }
+  .heading-orange {
+    margin-bottom: 24px;
+  }
+  blockquote {
+    line-height: 1.2;
+  }
+  .schedule-day {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .heading {
+    font-size: 48px;
+    -webkit-text-stroke-width: 1px;
+  }
+}
+
+  /*MARQUEE SETTINGS*/
+
+.marquee {
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+  width: 100%;
+  /* each letter will be 5% of the viewport width (vw) */
+  font-size: 10vw;
+  line-height: 2;
+  /* this will stop the long text from causing scroll bars by hanging
+  outside of the marquee box area */
+  overflow: hidden;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2000vw);
+  }
+}
+
+.marquee span {
+  /* this is the shorthand (brief) version of the animation css rule */
+  animation: moveLeft 250s infinite;
+  /* this will ensure the text stays all on the same line*/
+  white-space: nowrap;
+  /* our span is inline by default, so here we tell it to be block*/
+  display: block;
+  /* this will let us add our animation */
+  position: relative;
+}
+
+
+
+
